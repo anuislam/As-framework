@@ -15,10 +15,28 @@ project-folder/public
 
 # Installation:
 
-<p>Step 1: Download framework from github <a href="https://github.com/anuislam/As-framework">download</a> and extract to your project folder</p>
-<p>Step 2: Go to your project folder and open cmd and wright</p>
+Step 1: Download framework from github <a href="https://github.com/anuislam/As-framework">download</a> and extract to your project folder
+Step 2: Go to your project folder and open cmd and wright
 
 ```
 composer install
 ```
 hit enter
+
+Step 3: Create a database and connect it
+
+Step 4: Go to this url
+
+```
+http://yourwebsite.com/command
+```
+
+wright
+
+```
+database-install
+```
+
+hit enter
+
+After Database install successful now install done and now start your project
