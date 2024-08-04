@@ -1,0 +1,16 @@
+<?php 
+namespace --namespace--;
+
+defined("APP_PATH") || die('Direct access not permitted!!!');
+
+use Model;
+
+class --module_name-- extends Model {
+	
+
+	protected $fillable = [
+		'ID'
+	];
+
+
+}

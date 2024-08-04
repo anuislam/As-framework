@@ -1,0 +1,13 @@
+<?php 
+namespace --namespace--;
+
+/**
+ * Dtabase factory for --module_name--
+ */
+class --module_name--Factory {
+
+	public function create() {
+
+	}
+
+}

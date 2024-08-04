@@ -1,0 +1,31 @@
+<?php 
+namespace --namespace--;
+use Framework\database\DataBaseMaker;
+
+defined("APP_PATH") || die('Direct access not permitted!!!');
+/**
+ * Database maker for --module_name--
+ */
+class --module_name--Database {
+	
+	public function create() {
+
+		(new DataBaseMaker('--module_name--'))->create([
+			'ID' =>	[
+					'type' 	=> 'bigint',
+					'lenth' => 20,			
+					'auto_increment' => true,			
+				],
+			'timestamp' 		=>	true,
+			'primary_key' 		=>	'ID',
+		])->exe();
+
+
+
+	}
+
+	public function delete() {
+		(new DataBaseMaker('--module_name--'))->delete();
+	}
+
+}

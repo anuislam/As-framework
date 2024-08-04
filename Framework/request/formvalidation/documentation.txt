@@ -1,0 +1,21 @@
+$var = new Validation([
+	'field_name' => user input from data,
+	'field_name_two'=> user input from data,
+]);
+
+
+$var->check([
+	'field_name' => [
+		'validation' => 'Required|Number|Max-15|Min-10',
+		'message' => [
+			'Required' => 'you can avoid this section for default message' 
+		],
+		
+	],
+	'field_name_two' => [
+		'validation' => 'Required',
+		'message' => [
+			'Required' => 'you can avoid this section for default message' 
+		],
+	] 
+]);

@@ -1,0 +1,16 @@
+<?php 
+namespace --namespace--;
+
+defined("APP_PATH") || die('Direct access not permitted!!!');
+
+/**
+ * login Check Middleware
+ */
+class --module_name--Middleware
+{
+	
+	public function handle(){
+		return true;
+	}
+
+}

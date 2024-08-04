@@ -1,0 +1,12 @@
+{
+
+	"author" 		: "Anu islam",
+	"email" 		: "anuislams@gmail.com",
+	"name" 			: "--module_name--",
+	"title" 		: "Test title",
+	"description" 	: "Edith description",
+	"active" 		:  1,
+	"files" 		:  [
+		"helpers/helpers.php"
+	]
+}

@@ -1,0 +1,20 @@
+<?php 
+namespace --namespace--;
+defined("APP_PATH") || die('Direct access not permitted!!!');
+
+use Controller;
+
+class --module_name--Controller extends Controller{
+
+	function __construct(){
+		parent::__construct();	
+
+	}
+
+	public function index(){
+		
+	}
+
+
+
+}

@@ -1,0 +1,8 @@
+<?php 
+
+$module_aliases = '--module_name--::app';
+
+load_aliases($module_aliases);
+
+
+?>

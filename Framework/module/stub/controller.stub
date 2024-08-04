@@ -1,0 +1,22 @@
+<?php 
+namespace Module\--module_name--\controller;
+defined("APP_PATH") || die('Direct access not permitted!!!');
+
+use Controller;
+use  Auth;
+use Event;
+
+class MainController extends Controller{
+
+	function __construct(){
+		parent::__construct();	
+
+	}
+
+	public function index(){
+		$page_data = [];
+		$this->view(Event::Filter('--module_name--_main_page', '--module_name--::MainView'), $page_data);
+	}
+
+
+}

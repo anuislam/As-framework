@@ -1,0 +1,9 @@
+<?php 
+defined("APP_PATH") || die('Direct access not permitted!!!');
+//***********************************************
+// For --module_name--
+//***********************************************
+
+Route()->get('/--module_name--', '--module_name--::MainController@index')
+	->name('--module_name--')
+	->exe();

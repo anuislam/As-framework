@@ -1,0 +1,12 @@
+{
+
+	"author" 		: "Anu islam",
+	"email" 		: "anuislams@gmail.com",
+	"name" 			: "user",
+	"title" 		: "User management",
+	"description" 	: "this is a User management module",
+	"active" 		:  1,
+	"files" 		:  [
+		"helpers/helpers.php"
+	]
+}

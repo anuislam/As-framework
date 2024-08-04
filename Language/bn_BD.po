@@ -1,0 +1,468 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: workdiary\n"
+"POT-Creation-Date: 2023-06-27 21:25+0600\n"
+"PO-Revision-Date: 2023-06-28 02:21+0600\n"
+"Last-Translator: \n"
+"Language-Team: workdiary-blog-team\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: Config\n"
+"X-Poedit-SearchPathExcluded-2: Controller\n"
+"X-Poedit-SearchPathExcluded-3: vendor\n"
+
+#: Module/user/cls/ChangePassword.php:25
+msgid "Old password field is required."
+msgstr "পুরানো পাসওয়ার্ড ক্ষেত্র প্রয়োজন. "
+
+#: Module/user/cls/ChangePassword.php:31
+msgid "New password field is required.  "
+msgstr "নতুন পাসওয়ার্ড ক্ষেত্র প্রয়োজন. "
+
+#: Module/user/cls/ChangePassword.php:32
+msgid "New password must be a minimum of 6. "
+msgstr "নতুন পাসওয়ার্ড ন্যূনতম ৬টি হতে হবে। "
+
+#: Module/user/cls/ChangePassword.php:33
+msgid "New password must be a maximum of 20. "
+msgstr "নতুন পাসওয়ার্ড সর্বাধিক 20 হতে হবে। "
+
+#: Module/user/cls/ChangePassword.php:39
+msgid "Confirm password field is required. "
+msgstr "নিশ্চিত করুন পাসওয়ার্ড ক্ষেত্র প্রয়োজন. "
+
+#: Module/user/cls/ChangePassword.php:40
+msgid "New password and Confirm password does not match. "
+msgstr "নতুন পাসওয়ার্ড এবং কনফার্ম পাসওয়ার্ড মেলে না। "
+
+#: Module/user/cls/ChangePassword.php:62
+msgid "Old password does not match."
+msgstr ""
+
+#: Module/user/cls/ChangePassword.php:75
+msgid "Password change successful."
+msgstr ""
+
+#: Module/user/cls/ForgotPassword.php:65 Module/user/cls/ForgotPassword.php:66
+#: Module/user/controller/ForgotPasswordController.php:22
+msgid "Forgot my password"
+msgstr ""
+
+#: Module/user/cls/ForgotPassword.php:102
+#: Module/user/cls/ForgotPassword.php:141
+#: Module/user/cls/ForgotPassword.php:180
+msgid "User not exists."
+msgstr ""
+
+#: Module/user/cls/ForgotPassword.php:163
+msgid "Email field is required."
+msgstr ""
+
+#: Module/user/cls/ForgotPassword.php:164
+msgid "Email field must be a valid email address."
+msgstr ""
+
+#: Module/user/cls/Register.php:24
+#: Module/user/controller/EdithUserController.php:43
+msgid "First name field is required"
+msgstr ""
+
+#: Module/user/cls/Register.php:25
+#: Module/user/controller/EdithUserController.php:44
+msgid "First name field must be a minimum of 2 characters"
+msgstr ""
+
+#: Module/user/cls/Register.php:26
+#: Module/user/controller/EdithUserController.php:45
+msgid "First name field must be a maximum of 20 characters"
+msgstr ""
+
+#: Module/user/cls/Register.php:27
+#: Module/user/controller/EdithUserController.php:46
+msgid "First name field must be a valid text."
+msgstr ""
+
+#: Module/user/cls/Register.php:33
+#: Module/user/controller/EdithUserController.php:52
+msgid "Last name field is required"
+msgstr ""
+
+#: Module/user/cls/Register.php:34
+#: Module/user/controller/EdithUserController.php:53
+msgid "Last name field must be a minimum of 2 characters"
+msgstr ""
+
+#: Module/user/cls/Register.php:35
+#: Module/user/controller/EdithUserController.php:54
+msgid "Last name field must be a maximum of 20 characters"
+msgstr ""
+
+#: Module/user/cls/Register.php:36
+#: Module/user/controller/EdithUserController.php:55
+msgid "Last name field must be a valid text."
+msgstr ""
+
+#: Module/user/cls/Register.php:42
+msgid "This username already exists."
+msgstr ""
+
+#: Module/user/cls/Register.php:43
+msgid "Username field is required"
+msgstr ""
+
+#: Module/user/cls/Register.php:44
+msgid "Username field must be without space"
+msgstr ""
+
+#: Module/user/cls/Register.php:45
+msgid "Username field must be a valid text."
+msgstr ""
+
+#: Module/user/cls/Register.php:51
+#: Module/user/controller/EdithUserController.php:71
+msgid "This email already exists."
+msgstr ""
+
+#: Module/user/cls/Register.php:52
+#: Module/user/controller/EdithUserController.php:72
+msgid "Email-address field is required"
+msgstr ""
+
+#: Module/user/cls/Register.php:53
+#: Module/user/controller/EdithUserController.php:73
+msgid "Email-address field must be a valid email address."
+msgstr ""
+
+#: Module/user/cls/Register.php:59 Module/user/traits/LoginTrait.php:142
+msgid "Password field is required"
+msgstr ""
+
+#: Module/user/cls/Register.php:60
+msgid "Password field must be a minimum of 6 characters"
+msgstr ""
+
+#: Module/user/cls/Register.php:61
+msgid "Password field must be a maximum of 20 characters"
+msgstr ""
+
+#: Module/user/cls/Register.php:68
+msgid "Confirm password field is required"
+msgstr ""
+
+#: Module/user/cls/Register.php:69
+msgid "Password and confirm password field does not match."
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:21
+msgid "Edit"
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:21
+msgid "profile"
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:62
+msgid "Display name field is required"
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:63
+msgid "Display name field must be a minimum of 2 characters"
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:64
+msgid "Display name field must be a maximum of 20 characters"
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:65
+msgid "Display name field must be a valid text."
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:79
+msgid "Biography field is required"
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:80
+msgid "Biography field must be a valid text."
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:81
+msgid "Biography field must be a maximum of 200 characters"
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:104
+msgid "Profile update successful."
+msgstr ""
+
+#: Module/user/controller/EdithUserController.php:106
+msgid "Profile update error."
+msgstr ""
+
+#: Module/user/controller/ForgotPasswordController.php:36
+msgid "Email send successful. Please check your email inbox.."
+msgstr ""
+
+#: Module/user/controller/ForgotPasswordController.php:38
+msgid "Invalid email address."
+msgstr ""
+
+#: Module/user/controller/LoginController.php:38
+msgid "Login successful."
+msgstr ""
+
+#: Module/user/controller/LoginController.php:58
+msgid "Registration successful"
+msgstr ""
+
+#: Module/user/controller/LoginController.php:60
+msgid "Registration failed!"
+msgstr ""
+
+#: Module/user/controller/ResetPasswordController.php:24
+msgid "Invalid token!!"
+msgstr ""
+
+#: Module/user/controller/ResetPasswordController.php:29
+msgid "Invalit email."
+msgstr ""
+
+#: Module/user/controller/ResetPasswordController.php:35
+msgid "Invalit request."
+msgstr ""
+
+#: Module/user/controller/ResetPasswordController.php:46
+msgid "Invalit user."
+msgstr ""
+
+#: Module/user/controller/ResetPasswordController.php:50
+msgid "Reset my password"
+msgstr ""
+
+#: Module/user/controller/ResetPasswordController.php:63
+msgid "Password update successful."
+msgstr ""
+
+#: Module/user/controller/SocialLoginController.php:63
+#: Module/user/controller/SocialLoginController.php:103
+#: Module/user/controller/SocialLoginController.php:148
+msgid "login successful."
+msgstr ""
+
+#: Module/user/controller/socialLogin/SocialController.php:98
+msgid "Registration successful."
+msgstr ""
+
+#: Module/user/traits/LoginTrait.php:135
+msgid "Email address field is required"
+msgstr ""
+
+#: Module/user/traits/LoginTrait.php:136
+msgid "Email must be a valid email address."
+msgstr ""
+
+#: Module/user/traits/LoginTrait.php:159
+msgid "User not exists!!"
+msgstr ""
+
+#: Module/user/traits/LoginTrait.php:165 Module/user/traits/LoginTrait.php:166
+msgid "Invalid User!!!"
+msgstr ""
+
+#: Module/user/traits/LoginTrait.php:171
+msgid "Invalid email address!!!"
+msgstr ""
+
+#: Module/user/view/ChangePassword.php:4
+msgid "Change Password"
+msgstr ""
+
+#: Module/user/view/edithProfile.php:4
+msgid "Edith profile"
+msgstr ""
+
+#: Module/user/view/forgotPassword.php:3 Module/user/view/forgotPassword.php:9
+#: Module/user/view/register.php:131
+msgid "Forgot Password?"
+msgstr ""
+
+#: Module/user/view/forgotPassword.php:11
+msgid ""
+"We get it, stuff happens. Just enter your email address below and we'll send "
+"you a link to reset your password!"
+msgstr ""
+
+#: Module/user/view/forgotPassword.php:23
+msgid "Username or Email Address..."
+msgstr ""
+
+#: Module/user/view/forgotPassword.php:30
+msgid "Send me"
+msgstr ""
+
+#: Module/user/view/forgotPassword.php:40 Module/user/view/register.php:128
+#: View/inc/header.php:110 View/user/forgotPassword.php:45
+#: View/user/login.php:77 View/user/register.php:157
+#: View/user/resetPasswordAction.php:80
+msgid "Login"
+msgstr ""
+
+#: Module/user/view/forgotPassword.php:43 Module/user/view/resetPassword.php:48
+msgid "Create an Account!"
+msgstr ""
+
+#: Module/user/view/login.php:17 Module/user/view/login.php:22
+#: View/user/edithProfile.php:63
+msgid "Email address..."
+msgstr ""
+
+#: Module/user/view/login.php:31 Module/user/view/login.php:36
+#: Module/user/view/register.php:80 Module/user/view/register.php:86
+#: View/user/login.php:55 View/user/login.php:58
+#: View/user/resetPasswordAction.php:34 View/user/resetPasswordAction.php:43
+msgid "Password"
+msgstr ""
+
+#: Module/user/view/register.php:15
+msgid "Welcome to our website!"
+msgstr ""
+
+#: Module/user/view/register.php:28 Module/user/view/register.php:34
+#: View/user/edithProfile.php:47
+msgid "First name"
+msgstr ""
+
+#: Module/user/view/register.php:41 Module/user/view/register.php:47
+#: View/user/edithProfile.php:55
+msgid "Last name"
+msgstr ""
+
+#: Module/user/view/register.php:54 Module/user/view/register.php:60
+#: View/user/edithProfile.php:37
+msgid "Username"
+msgstr ""
+
+#: Module/user/view/register.php:67 Module/user/view/register.php:73
+msgid "Enter Email Address..."
+msgstr ""
+
+#: Module/user/view/register.php:93 Module/user/view/register.php:99
+#: View/user/changePassword.php:55
+msgid "Confirm Password"
+msgstr ""
+
+#: Module/user/view/register.php:105 Module/user/view/register.php:111
+msgid "Mobile number"
+msgstr ""
+
+#: Module/user/view/register.php:115 View/inc/header.php:112
+#: View/user/login.php:76 View/user/register.php:158
+msgid "Register"
+msgstr ""
+
+#: Module/user/view/resetPassword.php:4 Module/user/view/resetPassword.php:10
+msgid "Reset Your Password?"
+msgstr ""
+
+#: Module/user/view/resetPassword.php:21
+msgid "New password"
+msgstr ""
+
+#: Module/user/view/resetPassword.php:31 View/user/resetPasswordAction.php:61
+#: View/user/resetPasswordAction.php:70
+msgid "Confirm password"
+msgstr ""
+
+#: Module/user/view/resetPassword.php:36
+msgid "Reset Password"
+msgstr ""
+
+#: Module/user/view/resetPassword.php:45
+msgid "Login?"
+msgstr ""
+
+#: Module/user/view/socialLogInbutton.php:5
+msgid "Login with Google"
+msgstr ""
+
+#: Module/user/view/socialLogInbutton.php:12
+msgid "Login with Facebook"
+msgstr ""
+
+#: Module/user/view/socialLogInbutton.php:19
+msgid "Login with Twitter"
+msgstr ""
+
+#: View/inc/header.php:70
+msgid "Profile"
+msgstr ""
+
+#: View/inc/header.php:78 View/inc/profileNavMenu.php:21
+msgid "Edit profile"
+msgstr ""
+
+#: View/inc/header.php:85 View/inc/profileNavMenu.php:31
+msgid "Change password"
+msgstr ""
+
+#: View/inc/header.php:91
+msgid "Publish a work"
+msgstr ""
+
+#: View/inc/header.php:98
+msgid "Logout"
+msgstr ""
+
+#: View/inc/profileNavMenu.php:7
+msgid "Work"
+msgstr ""
+
+#: View/inc/profileNavMenu.php:13
+msgid "Comments"
+msgstr ""
+
+#: View/user/changePassword.php:39
+msgid "Old Password"
+msgstr ""
+
+#: View/user/changePassword.php:47
+msgid "New Password"
+msgstr ""
+
+#: View/user/changePassword.php:63 View/user/edithProfile.php:87
+msgid "Update"
+msgstr ""
+
+#: View/user/edithProfile.php:71
+msgid "Display name"
+msgstr ""
+
+#: View/user/edithProfile.php:79
+msgid "Biography"
+msgstr ""
+
+#: View/user/forgotPassword.php:20 View/user/resetPasswordAction.php:22
+msgid "To reset your password, please enter your email address"
+msgstr ""
+
+#: View/user/forgotPassword.php:35
+msgid "Enter your email address..."
+msgstr ""
+
+#: View/user/login.php:29 View/user/login.php:36
+msgid "Username..."
+msgstr ""
+
+#: View/user/login.php:70
+msgid "Keep me signed in"
+msgstr ""
+
+#: View/user/login.php:83
+msgid "Forgot your password?"
+msgstr ""

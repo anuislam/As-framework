@@ -1,0 +1,13 @@
+<?php
+defined("APP_PATH") || die('Direct access not permitted!!!');
+
+/**********************
+* 	Config app for --module_name--
+**********************/
+
+$r = [];
+
+$r['aliases'] = [];
+$r['aliases'][] = '';
+
+return $r;

@@ -1,0 +1,36 @@
+{
+    "name": "anuislam/mvc",
+    "description": "This is a simple project",
+    "type": "project",
+    "require": {
+        "php": "^7.4.0||^8.2.0",
+        "phpmailer/phpmailer": "~6.1",
+        "intervention/image": "^2.5",
+        "ezyang/htmlpurifier": "^4.13",
+        "nesbot/carbon": "^2.44",
+        "ramsey/uuid": "^4.1",
+        "iautomation/filesystem-helper": "^1.0",
+        "firebase/php-jwt": "^6.0.0",
+        "hybridauth/hybridauth" : "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anu islam",
+            "email": "anuislams@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+     "autoload": {
+        "psr-4": {
+            "Framework\\"       : "Framework/",
+            "Controller\\"      : "Controller/",
+            "Database\\"        : "Database/",
+            "Model\\"           : "Model/",
+            "Middleware\\"      : "Middleware/",
+            "Helpers\\"         : "Helpers/",
+            "Module\\"          : "Module/"
+        }
+    }
+
+}
