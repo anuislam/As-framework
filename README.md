@@ -16,3 +16,9 @@ project-folder/public
 # Installation:
 
 <p>Step 1: Download framework from github <a href="https://github.com/anuislam/As-framework">download</a> and extract to your project folder</p>
+<p>Step 2: Go to your project folder and open cmd and wright
+```
+composer install
+```
+hit enter
+</p>
