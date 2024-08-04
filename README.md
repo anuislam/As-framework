@@ -13,3 +13,6 @@ project-folder/public
   </li>
 </ol>
 
+# Installation:
+
+<p>Step 1: Download framework from github <a href="https://github.com/anuislam/As-framework">download</a> and extract to your project folder</p>
