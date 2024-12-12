@@ -61,7 +61,11 @@ function sanitize_url($url){
 
 	$url = preg_replace('/^(http(s)?)?:?\/*/u','http$2://',trim($url));
 
-	$url = str_replace('http://','https://', $url);
+	if (env('HTTPS', false) === true) {
+		$url = str_replace('http://','https://', $url);
+	}
+
+	
 
 	return htmlspecialchars($url, 11,'UTF-8',true);
 }

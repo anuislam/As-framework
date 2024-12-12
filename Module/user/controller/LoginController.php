@@ -35,8 +35,8 @@ class LoginController extends Controller{
 		}
 		$remember_me = (Input::post('remember_me') !== NULL ) ? true : false ;
 		$login->login($remember_me);
-		add_alert_box_message( __('Login successful.', 'Success') );
-		redirect()->url('home');
+		add_alert_box_message( __('Login successful.', 'success') );
+		redirect()->url(Event::filter('after_login_redirect', 'home'));
 	}
 
 
@@ -55,11 +55,11 @@ class LoginController extends Controller{
 		}
 
 		if ($register->join() === true) {
-			add_alert_box_message( __('Registration successful', 'Success') );
+			add_alert_box_message( __('Registration successful', 'success') );
 		}else{
-			add_alert_box_message( __('Registration failed!'), 'Error' );
+			add_alert_box_message( __('Registration failed!'), 'danger' );
 		}
-		redirect()->url('home');
+		redirect()->url(Event::filter('after_login_redirect', 'home'));
 	}
 
 	public function logout($data) {

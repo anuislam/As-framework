@@ -21,34 +21,38 @@ class ResetPasswordController extends Controller{
 		$token = Input::get('token');
 
 		if (ctype_xdigit($token) === false) {
-			add_alert_box_message(__('Invalid token!!'),'Error');
+			add_alert_box_message(__('Invalid token!!'),'danger');
 			Redirect()->url('login');
 		}
 
 		if (is_email($email) === false) {
-			add_alert_box_message(__('Invalit email.'), 'Error');
+			add_alert_box_message(__('Invalit email.'), 'danger');
 			Redirect()->url('login');
 		}
 
 		$req = (new Psreset())->where(['email' => $email, 'token' => $token])->one();
 		if ($req === null) {
-			add_alert_box_message(__('Invalit request.'), 'Error');
+			add_alert_box_message(__('Invalit request.'), 'danger');
 			Redirect()->url('login');
 		}else{
 			$timestamp 		= (int) date("YmdHi");
 			$databasetime	= (int) date('YmdHi', strtotime($req->exp_life));
 			if ($timestamp > $databasetime) {
-				add_alert_box_message('Invalit request.', 'Error');
+				add_alert_box_message('Invalit request.', 'danger');
 				Redirect()->url('login');
 			}
 		}
 		if ((new User())->getUserByEmail($email) === null) {
-			add_alert_box_message(__('Invalit user.'), 'Error');
+			add_alert_box_message(__('Invalit user.'), 'danger');
 			return true;
 		}
 		$page_data = [];
 		$page_data['title'] = __('Reset my password');			
-		$this->view(Event::Filter('reset_password', 'user::resetPassword'), $page_data);
+		$this->view(
+			Event::Filter('reset_password_view', 'user::resetPassword'), 
+			Event::Filter('reset_password_page_data', $page_data), 
+			// $page_data
+		);
 	}
 
 	public function resetPasswordAction(){
@@ -60,7 +64,7 @@ class ResetPasswordController extends Controller{
 
 		$rsps->updatePassword();
 
-		add_alert_box_message(__('Password update successful.'), 'Success');
+		add_alert_box_message(__('Password update successful.'), 'success');
 
 		redirect()->url('login');
 	}

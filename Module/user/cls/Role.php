@@ -69,37 +69,11 @@ class Role{
 
 			'admin' 		=> [
 				'view_site' 		=> true,				
-				'edit_user' 		=> true,
-				'manage_sicret'		=> true,
-				'add_new_user' 		=> true,
-				'edith_other_user' 	=> true,
-				'delete_user' 		=> true,
-				'delete_other_user' => true,
-				'manage_shop' 		=> true,
-				'manage_order' 		=> true,
-				'add_new_shop' 		=> true,
-				'delete_shop' 		=> true,
-				'make_cotation' 	=> true,
-				'media_upload' 		=> true,
-				'delete_cotation' 	=> true,
-				'make_invoice' 		=> true,
-				'delete_invoice' 	=> true,
-				'delete_order' 		=> true,
-				'manage_attendance' => true,
-				'create_order' 		=> true,
-				'create_shop' 		=> true,
-				'edith_order' 		=> true,
-				'manage_own_attendance' => true,
-				'manage_salary' => true,
-				'role_eidth' => true,
-				'manage_employe' => true,
-				'change_password' => true,
+				'manage_shortlink' 		=> true,
 			],
 			
 			'user' => [
 				'view_site'	 		=> true,
-				'edit_user' 		=> true,
-				'delete_user' 		=> true,
 			]
 		];
 	}

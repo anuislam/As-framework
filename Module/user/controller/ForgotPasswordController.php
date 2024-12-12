@@ -33,9 +33,9 @@ class ForgotPasswordController extends Controller{
 			die();		
 		}else{
 			if ($ForgotPassword->sendResetLink($user) === true) {
-				add_alert_box_message(__('Email send successful. Please check your email inbox..'), 'Success');
+				add_alert_box_message(__('Email send successful. Please check your email inbox..'), 'success');
 			}else{
-				add_alert_box_message(__('Invalid email address.'), 'Error');
+				add_alert_box_message(__('Invalid email address.'), 'danger');
 			}
 		}
 

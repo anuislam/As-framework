@@ -1,10 +1,6 @@
-<?php View()->layout('layout.layout'); ?>
+<?php get_view_part('inc.header'); ?>
 
-<?php View()->section('page_title'); ?>
-<?php _e('Reset Your Password?'); ?>
-<?php View()->endSection(); ?>
-
-<?php View()->section('content'); ?>
+<?php get_view_part('inc.navbar'); ?>
 
 <div class="text-center">
     <h1 class="h4 text-gray-900 mb-4"><?php _e('Reset Your Password?'); ?></h1>
@@ -36,7 +32,7 @@
       <?php Form::button(__('Reset Password'), ['class' => 'btn btn-primary btn-user btn-block']); ?>
    <hr>
    
- <?php View()->include('user::socialLogInbutton'); ?>
+<?php get_view_part('user::socialLogInbutton'); ?>
  
 <?php Form::close(); ?>
 
@@ -48,5 +44,5 @@
        <a class="small" href="<?php echo url('register'); ?>"><?php _e('Create an Account!'); ?></a>
    </div>
 
-<?php View()->endSection(); ?>
-<?php View()->exe(); ?>
+
+<?php get_view_part('inc.footer'); ?>
