@@ -21,7 +21,8 @@ class Session {
 
 	static function remember($val, $name) {
 		$cookie_time = Config('cookie_expiration_time', 'config');
-		$cookie_time = Carbon::now()->addDays($cookie_time)->timestamp;
+		$cookie_time = intval($cookie_time);
+		$cookie_time = time() + (86400 * $cookie_time);
 		setcookie($name, $val, $cookie_time, APP_PATH);
 	}
 

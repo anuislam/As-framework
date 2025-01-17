@@ -108,12 +108,9 @@ if (empty($_SESSION['alart_message']) === true) {
 }
 ?>
 
-
-<div workdiary_notification 
-	heading="<?php echo ucfirst($_SESSION['alart_type']); ?>" 
-	text="<?php echo $_SESSION['alart_message']; ?>" 
-	icon="<?php echo $_SESSION['alart_type']; ?>"
-></div>
+<div class="alert alert-<?php echo $_SESSION['alart_type']; ?>">
+  <strong><?php echo ucfirst($_SESSION['alart_type']); ?>!</strong> <?php echo $_SESSION['alart_message']; ?>
+</div>
 
 
 
@@ -122,7 +119,7 @@ unset($_SESSION['alart_message']);
 unset($_SESSION['alart_type']);
 }
 
-function add_alert_box_message($message, $type = 'Success'){
+function add_alert_box_message($message, $type = 'success'){
 	$_SESSION['alart_message'] = $message;
 	$_SESSION['alart_type'] 	= $type;
 }
@@ -226,14 +223,25 @@ function abort_404_if($condition){
 	}
 }
 
+function abort_403_if($condition){
+	if ($condition) {
+		abort_403();
+	}
+}
+
 function die_if($condition){
 	if ($condition) {
 		die();
 	}
 }
 
+function abort_403(){
+	$errorPage = new ErrorPage();
+	$errorPage->page403();
+	die();
+}
+
 function abort_404(){
-	header("HTTP/1.0 404 Not Found");
 	$errorPage = new ErrorPage();
 	$errorPage->Page404();
 	die();

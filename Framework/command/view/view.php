@@ -205,8 +205,20 @@ a{
   <div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
   </div></div>
 
-  <ul class="command_list">
+  <ul class="command_result">
 
+  </ul>
+
+  <ul class="command_list" style="color: #3d5d59;font-size: 15px;">
+    <li>make:module-{name}</li>
+    <li>make:model-{name}-{location} default root location</li>
+    <li>make:controller-{name}-{location} default root location</li>
+    <li>make:controller-{name}-{location} default root location</li>
+    <li>make:middleware-{name}-{location} default root location</li>
+    <li>make:database-{name}-{location} default root location</li>
+    <li>make:database_factory-{name}-{location} default root location</li>
+    <li>database-install</li>
+    <li>database-dummy-install</li>
   </ul>
 
 </div>
@@ -220,7 +232,7 @@ a{
 		$doc.on('submit', '#command-form', function (e) {
 			e.preventDefault();
       $('.loadingio-spinner-spin-jpvlv996r').css('display', 'block');
-      $('ul.command_list').html('');
+      $('ul.command_result').html('');
 			$.ajax({
 				type: 'POST',
 				url:  '<?php echo url('command_create'); ?>',
@@ -231,14 +243,14 @@ a{
           $('.loadingio-spinner-spin-jpvlv996r').css('display', 'none');
 					if (data.error == 'no') {
 						$('#command').val('');
-            $('ul.command_list').append('<li>'+data.msg+'</li>');
+            $('ul.command_result').append('<li>'+data.msg+'</li>');
             $.each(data.items, function(i, item) {
-                $('ul.command_list').append('<li>'+item+'</li>');
+                $('ul.command_result').append('<li>'+item+'</li>');
             });
 					}else{
             if (undefined !== data.msg) {
 
-						  $('ul.command_list').append('<li>'+data.msg+'</li>');
+						  $('ul.command_result').append('<li>'+data.msg+'</li>');
 					 
             }
           }
@@ -247,6 +259,11 @@ a{
 				}
 			});
 		});
+
+
+
+
+
 
 	});
 

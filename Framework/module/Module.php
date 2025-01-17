@@ -147,6 +147,7 @@ class Module{
 
 		FilesystemHelper::create($path.'/model');
 		FilesystemHelper::create($path.'/database');
+		FilesystemHelper::create($path.'/assets');
 
 		FilesystemHelper::create($path.'/helpers');
 

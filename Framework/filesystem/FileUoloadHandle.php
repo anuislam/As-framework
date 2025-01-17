@@ -18,9 +18,9 @@ class FileUoloadHandle{
 	function __construct($fieldNmae){
 		$this->file 		= $_FILES[$fieldNmae];
 		$this->setFileName 	= md5(random_bytes(15)).'.'.$this->getFileExtention();
-		$this->defaultPath 	= APP_PATH.'/'.config('upload_path', 'media::config').'/';
-		$this->size_limit 	= config('size_limit', 'media::config');
-		$this->allowFiles 	= config('allow_mime_type', 'media::config');
+		$this->defaultPath 	= APP_PATH.'/'.config('upload_path').'/';
+		$this->size_limit 	= config('size_limit');
+		$this->allowFiles 	= config('allow_mime_type');
 	}
 
 	public function is_allwoFile(){		
@@ -85,7 +85,7 @@ class FileUoloadHandle{
 	}
 
 	public function save(){
-		$this->setUploadPath();
+		//$this->setUploadPath();
 		$filename = $this->defaultPath.'/'. $this->setFileName;
 		if (move_uploaded_file($this->file['tmp_name'], $filename)) {
 			return true;
